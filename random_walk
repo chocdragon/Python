@@ -1,0 +1,30 @@
+# Create a random walk and with random colours, in 4 random chosen directions
+# This program makes use of Turtle, function, random
+
+from turtle import Turtle, Screen
+import random
+
+turns = [0, 90, 180, 270]
+
+t = Turtle()
+t.shape("arrow")
+t.pensize(10)
+t.speed("fast")
+ts = t.screen
+ts.colormode(255)
+
+# Function to generate a random colour
+def random_colour():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    random_colour = (r, g, b)
+    return random_colour
+
+for i in range(150):
+    t.color(random_colour()) # gets a random colour from the random_colour function
+    t.setheading(random.choice(turns))
+    t.forward(15)
+
+screen = Screen()
+screen.exitonclick()
