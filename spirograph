@@ -1,0 +1,28 @@
+# This turtle module will create a spirograph of random colours and at a tilt
+import turtle as timmy
+import random
+
+timmy.colormode(255)
+timmy.speed("fastest")
+
+# Function for random colours
+def random_colour():
+    r = random.randint(0,255)
+    g = random.randint(0,255)
+    b = random.randint(0,255)
+    colour = (r, g, b)
+    return colour
+
+# Main program
+# This program draws each circle at a 10 degree angle counter clockwise from the previous
+# circle.
+# Thus, for a 10 degree angle turn, we will need 360 / 10 = 36 circles to complete a rotation
+# That is how the range of the spirograph is 36. Change the range number if the setheading degree changes.
+for i in range (36):
+    timmy.color(random_colour())
+    timmy.circle(80)
+    timmy.setheading(timmy.heading() + 10)
+
+
+screen = timmy.Screen()
+screen.exitonclick()
