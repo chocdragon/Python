@@ -4,8 +4,7 @@ This repository holds Python codes that are done through exercises and examples 
 
 Project 1: Drinks Machine Menu
 Drinks Machine Menu codes. This code prompts user for a list of drinks such as Latte, Cappuccino, Milk Tea and Hot Chocolate.
-Two hidden prompts that it accepts are 'off' and 'report' for the service technician to safely turn off the machine and to report the machine's profit & resource status. 
-# dictionary #function
+Two hidden prompts that it accepts are 'off' and 'report' for the service technician to safely turn off the machine and to report the machine's profit & resource status. #dictionary #function
 
 Project 2: True False Quiz
 This True or False Quiz zip file contains a set of codes that makes use of the Object Oriented Programming concepts where there are:
