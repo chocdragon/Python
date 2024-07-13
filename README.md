@@ -2,7 +2,7 @@
 
 This repository holds Python codes that are done through exercises and examples that I have gone through. 
 
- >> Project 1: Drinks Machine Menu
+** Project 1: Drinks Machine Menu
 Drinks Machine Menu codes. This code prompts user for a list of drinks such as Latte, Cappuccino, Milk Tea and Hot Chocolate.
 Two hidden prompts that it accepts are 'off' and 'report' for the service technician to safely turn off the machine and to report the machine's profit & resource status. #dictionary #function
 
