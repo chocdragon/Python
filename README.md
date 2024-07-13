@@ -20,6 +20,6 @@ It chooses a random direction and RGB choices of colour at every step. Runs for 
 Draws a spirograph using the turtle module. The angle is pre-defined. No inputs from user is necessary. #turtle #random
 
 ** Project 5: Contemporary Spot Painting | 
-This code creates a contemporary spot painting similar to Damien Hirst's spot painting. 
+This code creates a contemporary spot painting similar to the great Damien Hirst's spot painting. 
 I installed a Python module called colorgram (https://pypi.org/project/colorgram.py/) and looked up an image for reference. The colorgram module can extract a coder defined number of colours from the provided image. In this case, I picked 20 colours. 
 I randomise the 20 choices of colours to create this spot painting. #turtle #colorgram #random
