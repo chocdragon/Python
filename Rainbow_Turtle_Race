@@ -1,0 +1,56 @@
+from turtle import Turtle, Screen
+import random
+
+play = False
+screen = Screen()
+screen.setup(width=500, height=400)
+
+# Use object tom to draw a finish line for the race
+tom = Turtle()
+tom.penup()
+tom.goto(210,180)
+tom.write("Finish line", align = "center")
+tom.pendown()
+tom.right(90)
+tom.forward(360)
+tom.hideturtle()
+
+user_bet = screen.textinput(title="Make your bet", prompt="| red | orange | yellow | green | blue | indigo | purple | \nWhich turtle will win the race? \nEnter a color: ")
+user_bet = user_bet.lower()
+
+# List of turtle colors
+color_choice = ["red", "orange", "yellow", "green", "blue", "indigo", "purple"]
+
+# Define starting y-coordinate for the turtle
+y_coord = -140
+
+# Start with an empty list of turtle participants
+all_turtles = []
+
+# Loop to create 7 rainbow coloured turtles
+for color in color_choice:
+    tim = Turtle(shape="turtle")
+    tim.color(color)
+    tim.penup()
+    tim.goto(x=-230, y=y_coord)
+    y_coord += 50
+    all_turtles.append(tim) # to give each turtle a spot in the all_turtles list
+
+if user_bet:
+    play = True
+
+while play:
+    for each in all_turtles:
+        speed = random.randint(0,10) # Turtle speed ranges between 0 to 10. 10 being the fastest.
+        each.forward(speed)
+        if each.xcor() > 210:
+            play = False
+            print("End of race")
+            print(f"You bet on the {user_bet} turtle")
+            print(f"The winning turtle is {each.fillcolor()}")
+            if user_bet == each.fillcolor():
+                print("Your turtle wins!")
+            else:
+                print("Your turtle lost the race")
+
+screen.exitonclick()
