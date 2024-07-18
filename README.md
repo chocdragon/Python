@@ -23,3 +23,13 @@ Draws a spirograph using the turtle module. The angle is pre-defined. No inputs 
 This code creates a contemporary spot painting similar to the great Damien Hirst's spot painting. 
 I installed a Python module called colorgram (https://pypi.org/project/colorgram.py/) and looked up an image for reference. The colorgram module can extract a coder defined number of colours from the provided image. In this case, I picked 20 colours. 
 I randomise the 20 choices of colours to create this spot painting. #turtle #colorgram #random
+
+** Project 6: Etch-A-Sketch | 
+Using the turtle module to recreate the Etch-A-Sketh game that allows the user to control the direction of the turtle to sketch on the screen.
+# w key moves the turtle forward
+# s key moves the turtle backwards
+# d key moves the turtle direction clockwise
+# a key moves the turtle direction counter clockwise
+# c key will clear and rest the screen for a new sketch
+
+** Project 7: Turtle Race | This program prompts user to enter a rainbow colour of choice to predict which turtle colour will win the race. The speed of the turtle movement is randomly selected and the program will inform the user of the outcome of the race. 
